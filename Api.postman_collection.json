@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "a688e2b6-a81c-4a9d-a39c-6018fef574ff",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13101361"
+	},
+	"item": [
+		{
+			"name": "Post Estudiantes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Jose Jonathan\",\r\n    \"direccion\": \"Morazan, gotera\",\r\n    \"telefono\" : 70556010,\r\n    \"nrc\": \"1407-050699-101-4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://40gz1xlq12.execute-api.us-east-1.amazonaws.com/CrearCliente",
+					"protocol": "https",
+					"host": [
+						"40gz1xlq12",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"CrearCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get primero cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://40gz1xlq12.execute-api.us-east-1.amazonaws.com/obtenerCliente",
+					"protocol": "https",
+					"host": [
+						"40gz1xlq12",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"obtenerCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://40gz1xlq12.execute-api.us-east-1.amazonaws.com/ObtenerTodos",
+					"protocol": "https",
+					"host": [
+						"40gz1xlq12",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"ObtenerTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cliente",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"nombre\": \" Oscar Daniel Diaz\",\r\n        \"telefono\": 70556010,\r\n        \"nrc\": \"1407-050699-101-4\",\r\n        \"direccion\": \"San Miguel, San Miguel lote#40\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://40gz1xlq12.execute-api.us-east-1.amazonaws.com/clientes/75a5d694-614d-4218-a794-416c45a69b07",
+					"protocol": "https",
+					"host": [
+						"40gz1xlq12",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"clientes",
+						"75a5d694-614d-4218-a794-416c45a69b07"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://40gz1xlq12.execute-api.us-east-1.amazonaws.com/clientes/31b99517-d7c6-4cc0-a899-7a86150176cc",
+					"protocol": "https",
+					"host": [
+						"40gz1xlq12",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"clientes",
+						"31b99517-d7c6-4cc0-a899-7a86150176cc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
