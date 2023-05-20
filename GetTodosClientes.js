@@ -5,7 +5,7 @@ const dynamo = DynamoDBDocumentClient.from(new DynamoDBClient({ region: "us-east
 
 export const handler = async (event) => {
     try {
-        // Realizar una operación de escaneo para obtener todos los elementos de la tabla
+        // Se realiza una operación de escaneo para obtener todos los elementos de la tabla
         const scanResult = await dynamo.send(new ScanCommand({
             TableName: "Clientes"
         }));
